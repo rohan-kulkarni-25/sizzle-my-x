@@ -86,18 +86,18 @@ const SizzleMyX = () => {
             </p>
           </div>
         )}
-        <div className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4">
+        <div className="fixed bottom-2 left-2 right-2 sm:absolute sm:bottom-4 sm:right-4 sm:left-auto flex justify-center sm:justify-end">
           <a
             href="https://lemmebuild.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-gray-800 gap-2 text-xs sm:text-sm font-semibold py-1 px-2 sm:px-3 rounded-full shadow-md hover:bg-gray-100 transition duration-300 flex items-center"
+            className="bg-white text-gray-800 text-xs sm:text-sm font-semibold py-1 px-2 sm:px-3 rounded-full shadow-md hover:bg-gray-100 transition duration-300 flex items-center"
           >
-            <p className="text-xl">Build with </p>
+            <span className="sm:inline hidden">Built with</span>{" "}
             <img
               src="https://lemmebuild.com/img/logo_light.png"
               alt="LemmeBuild Logo"
-              className="w-fit h-6 mr-1 object-contain"
+              className="w-fit h-4 mr-1 xl:h-6 object-contain"
             />
           </a>
         </div>
